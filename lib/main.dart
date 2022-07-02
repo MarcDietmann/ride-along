@@ -1,15 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ride_along/chat_page.dart';
-import 'package:ride_along/find_ticket_screen.dart';
-import 'package:ride_along/full_width_text_button.dart';
 import 'package:ride_along/main_page.dart';
-import 'package:ride_along/rounded_container.dart';
 import 'package:ride_along/settings_page.dart';
-import 'package:ride_along/share_ticket_screen.dart';
-import 'package:ride_along/your_rides_screen.dart';
-
-import 'extensions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         fontFamily: "RobotoMono",
-        backgroundColor: Color(0xddB6EFDA),
-        accentColor: Color(0xffB6EFDA),
+        backgroundColor: const Color(0xddB6EFDA),
+        accentColor: const Color(0xffB6EFDA),
         bottomAppBarColor: Colors.green[300],
         textTheme: const TextTheme(
           headline1: TextStyle(fontWeight: FontWeight.w700, fontSize: 24),
@@ -51,7 +43,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       //B6EFDA Color.fromRGBO(0xb6, 0xef, 0xda, 0.5)
       floatingActionButton: MaterialButton(
-        onPressed: ()=> testApi(),
+        onPressed: ()=> {},
         child: Container(
           height: 50,
           decoration: const BoxDecoration(
@@ -100,7 +92,7 @@ class LogInScreen extends StatelessWidget {
         children: [
           TextField(
             controller: TextEditingController(),
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               prefix: Icon(Icons.alternate_email_sharp)
             )
           )
@@ -111,7 +103,7 @@ class LogInScreen extends StatelessWidget {
 }
 
 
-List<Widget>_pages=[ChatPage(), MainPage(), SettingsPage()];
+List<Widget>_pages=[const ChatPage(), const MainPage(), const SettingsPage()];
 
 
 

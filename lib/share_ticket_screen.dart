@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ride_along/full_width_text_button.dart';
-import 'package:ride_along/main.dart';
 
 class ShareTicketScreen extends StatefulWidget {
   const ShareTicketScreen({Key? key}) : super(key: key);

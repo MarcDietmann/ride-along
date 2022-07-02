@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:ride_along/find_ticket_screen.dart';
 import 'package:ride_along/full_width_text_button.dart';
 import 'package:ride_along/share_ticket_screen.dart';

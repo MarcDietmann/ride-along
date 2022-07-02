@@ -1,3 +1,4 @@
+/*
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
@@ -23,4 +24,4 @@ class Ride {
     // dateOfDeparture = json["dateOfDeparture"];
   }
 
-}
+}*/
