@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ride_along/rounded_container.dart';
+import 'package:ride_along/_old/rounded_container.dart';
 
 class FullWidthTextButton extends StatelessWidget {
   const FullWidthTextButton({

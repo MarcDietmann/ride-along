@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ride_along/chat_page.dart';
-import 'package:ride_along/main_page.dart';
-import 'package:ride_along/settings_page.dart';
-
+import 'package:ride_along/_old/chat_page.dart';
+import 'package:ride_along/_old/main_page.dart';
+import 'package:ride_along/_old/settings_page.dart';
 void main() {
   runApp(const MyApp());
 }

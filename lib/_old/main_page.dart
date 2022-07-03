@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:ride_along/find_ticket_screen.dart';
-import 'package:ride_along/full_width_text_button.dart';
-import 'package:ride_along/share_ticket_screen.dart';
-import 'package:ride_along/your_rides_screen.dart';
+import 'package:ride_along/_old/find_ticket_screen.dart';
+import 'package:ride_along/_old/full_width_text_button.dart';
+import 'package:ride_along/_old/share_ticket_screen.dart';
+import 'package:ride_along/_old/your_rides_screen.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({

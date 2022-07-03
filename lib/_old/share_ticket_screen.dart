@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ride_along/full_width_text_button.dart';
+import 'package:ride_along/_old/full_width_text_button.dart';
 
-class FindTicketScreen extends StatefulWidget {
-  const FindTicketScreen({Key? key}) : super(key: key);
+class ShareTicketScreen extends StatefulWidget {
+  const ShareTicketScreen({Key? key}) : super(key: key);
 
   @override
-  State<FindTicketScreen> createState() => _FindTicketScreenState();
+  State<ShareTicketScreen> createState() => _ShareTicketScreenState();
 }
 
-class _FindTicketScreenState extends State<FindTicketScreen> {
+class _ShareTicketScreenState extends State<ShareTicketScreen> {
   late List<bool> _isOpen;
   final TextEditingController _timeController= TextEditingController();
   final TextEditingController _fromController= TextEditingController();
@@ -40,10 +40,10 @@ class _FindTicketScreenState extends State<FindTicketScreen> {
             children: [
               buildExpansionPanel(
                   context: context,
-                  index: 0,
+                 index: 0,
                   body: TextField(
                     onChanged: (value)=> {
-                      setState(() => inputData["time"]=value),
+                    setState(() => inputData["time"]=value),
                     },
                     decoration: const InputDecoration(
                       hintText: 'dd.mm.yyyy hh:mm',
@@ -90,8 +90,7 @@ class _FindTicketScreenState extends State<FindTicketScreen> {
             ],
           ),
           FullWidthTextButton(
-            label: "Fahrt suchen",
-            //todo send request
+            label: "absenden",
             onTap: ()=>{print(inputData)},
           )
         ],
@@ -108,12 +107,14 @@ class _FindTicketScreenState extends State<FindTicketScreen> {
       body: Padding(padding: const EdgeInsets.all(16.0), child: body),
       headerBuilder: (BuildContext context, bool isExpanded) {
         return Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Text(
-            header!,
-            style: Theme.of(context).textTheme.headline2,
-          ),);
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              header!,
+              style: Theme.of(context).textTheme.headline2,
+            ),);
       },
     );
   }
 }
+
+
